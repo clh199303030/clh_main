@@ -17,7 +17,7 @@ public class HungryTest {
                 @Override
                 public void run() {
                     try {
-                        Hungry.getInstance();
+                        HungrySingle.getInstance();
                         lath.await();
                     }catch (Exception e){
                         e.printStackTrace();
