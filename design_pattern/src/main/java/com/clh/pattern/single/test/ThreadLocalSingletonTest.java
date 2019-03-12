@@ -1,6 +1,6 @@
 package com.clh.pattern.single.test;
 
-import com.gupaoedu.vip.pattern.singleton.threadlocal.ThreadLocalSingleton;
+import com.clh.pattern.single.threadlocal.ThreadLocalSingleton;
 
 /**
  * Created by Tom.

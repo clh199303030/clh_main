@@ -1,6 +1,6 @@
 package com.clh.pattern.single.test;
 
-import com.gupaoedu.vip.pattern.singleton.seriable.SeriableSingleton;
+import com.clh.pattern.single.seriable.SeriableSingleton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

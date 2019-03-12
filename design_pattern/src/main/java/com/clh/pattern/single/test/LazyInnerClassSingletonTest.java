@@ -1,6 +1,6 @@
 package com.clh.pattern.single.test;
 
-import com.gupaoedu.vip.pattern.singleton.lazy.LazyInnerClassSingleton;
+import com.clh.pattern.single.lazy.InnerClasssSingle;
 
 import java.lang.reflect.Constructor;
 
@@ -12,7 +12,7 @@ public class LazyInnerClassSingletonTest {
     public static void main(String[] args) {
         try{
             //很无聊的情况下，进行破坏
-            Class<?> clazz = LazyInnerClassSingleton.class;
+            Class<?> clazz = InnerClasssSingle.class;
 
             //通过反射拿到私有的构造方法
             Constructor c = clazz.getDeclaredConstructor(null);

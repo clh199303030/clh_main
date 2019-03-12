@@ -1,6 +1,7 @@
 package com.clh.pattern.single.test;
 
-import com.gupaoedu.vip.pattern.singleton.register.ContainerSingleton;
+
+import com.clh.pattern.single.register.ContainerSingleton;
 
 /**
  * Created by Tom.
@@ -12,8 +13,9 @@ public class ContainerSingletonTest {
         try {
             long start = System.currentTimeMillis();
             ConcurrentExecutor.execute(new ConcurrentExecutor.RunHandler() {
+                @Override
                 public void handler() {
-                    Object obj = ContainerSingleton.getInstance("com.gupaoedu.vip.pattern.singleton.test.Pojo");;
+                    Object obj = ContainerSingleton.getInstance("com.clh.pattern.single.test");;
                     System.out.println(System.currentTimeMillis() + ": " + obj);
                 }
             }, 10,6);

@@ -20,6 +20,7 @@ public class ConcurrentExecutor {
         final CountDownLatch countDownLatch = new CountDownLatch(executeCount);
         for (int i = 0; i < executeCount; i ++){
             executorService.execute(new Runnable() {
+                @Override
                 public void run() {
                     try{
                         //执行此方法用于获取执行许可，当总计未释放的许可数不超过executeCount时,
