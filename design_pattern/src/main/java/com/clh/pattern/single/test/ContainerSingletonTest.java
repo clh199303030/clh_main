@@ -8,14 +8,12 @@ import com.clh.pattern.single.register.ContainerSingleton;
  */
 public class ContainerSingletonTest {
     public static void main(String[] args) {
-
-
         try {
             long start = System.currentTimeMillis();
             ConcurrentExecutor.execute(new ConcurrentExecutor.RunHandler() {
                 @Override
                 public void handler() {
-                    Object obj = ContainerSingleton.getInstance("com.clh.pattern.single.test");;
+                    Object obj = ContainerSingleton.getInstance("com.clh.pattern.single.test");
                     System.out.println(System.currentTimeMillis() + ": " + obj);
                 }
             }, 10,6);
